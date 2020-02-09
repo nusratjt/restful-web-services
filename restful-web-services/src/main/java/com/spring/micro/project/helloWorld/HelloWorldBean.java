@@ -1,4 +1,4 @@
-package com.spring.micro.project;
+package com.spring.micro.project.helloWorld;
 
 public class HelloWorldBean {
 

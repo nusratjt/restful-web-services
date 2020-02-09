@@ -1,4 +1,4 @@
-package com.spring.micro.project;
+package com.spring.micro.project.helloWorld;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
