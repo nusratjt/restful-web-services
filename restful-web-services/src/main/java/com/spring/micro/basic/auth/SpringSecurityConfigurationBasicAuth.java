@@ -1,4 +1,4 @@
-package com.spring.micro.project.basic.auth;
+package com.spring.micro.basic.auth;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

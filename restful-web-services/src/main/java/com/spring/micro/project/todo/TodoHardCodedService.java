@@ -10,13 +10,13 @@ import org.springframework.stereotype.Service;
 public class TodoHardCodedService {
 
 	private static List<Todo> todos = new ArrayList<Todo>();
-	private static int idCounter = 0;
+	private static long idCounter = 0;
 
 	static {
-		todos.add(new Todo(++idCounter, "nusrat", "Learn painting with acrylic colors", new Date(), false));
-		todos.add(new Todo(++idCounter, "nusrat", "Learn about Microservices", new Date(), false));
-		todos.add(new Todo(++idCounter, "nusrat", "Learn programming", new Date(), false));
-		todos.add(new Todo(++idCounter, "nusrat", "Learn to cook", new Date(), false));
+		todos.add(new Todo(++idCounter, "tania", "Learn painting with acrylic colors", new Date(), false));
+		todos.add(new Todo(++idCounter, "tania", "Learn about Microservices", new Date(), false));
+		todos.add(new Todo(++idCounter, "tania", "Learn programming", new Date(), false));
+		todos.add(new Todo(++idCounter, "tania", "Learn to cook", new Date(), false));
 
 	}
 
@@ -28,14 +28,11 @@ public class TodoHardCodedService {
 		if(todo.getId()==-1 || todo.getId()==0) {
 			todo.setId(++idCounter);
 			todos.add(todo);
-		}
-		else {
+		} else {
 			deleteById(todo.getId());
 			todos.add(todo);
 		}
-		
 		return todo;
-			
 	}
 
 	public Todo deleteById(long id) {
